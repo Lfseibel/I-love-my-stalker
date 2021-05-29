@@ -7,7 +7,9 @@ public class Cachorro : EntityController
     // pursueRange  : Persegue player a partir dessa distância
     // attackRange  : Ataca player a partir dessa distância
     // retreatRange : Recua do player a partir dessa distância
-    [SerializeField] private float pursueRange, attackRange, retreatRange;
+    [SerializeField] private float pursueRange, retreatRange, attackDistance;
+
+    [SerializeField] private LayerMask playerMask;
 
     // Objeto do player usado como referência
     // em diversas verificações
@@ -15,6 +17,8 @@ public class Cachorro : EntityController
 
     // Distância do inimigo ao player
     protected float distPlayer;
+
+
 
     // Direção do player, em coordenadas x
     protected float playerDirection;
@@ -51,7 +55,7 @@ public class Cachorro : EntityController
 
         // Cria uma lista de 'thresholds' the ações
         // Imagem em anexo para visualizar
-        enemyMovementThreshold = new float[]{ retreatRange, attackRange, pursueRange };
+       
 
         // Inicializa o contador do ataque
         attackCooldownTimer = attackCooldown;
@@ -69,6 +73,11 @@ public class Cachorro : EntityController
         if(distPlayer <= pursueRange)
         {
             MoveTowardsPlayer();
+            if (distPlayer<=attackDistance)
+            {
+                
+                anim.SetBool("IsAtacking", true);
+            }
         }
            
         
@@ -81,9 +90,27 @@ public class Cachorro : EntityController
     {
         Vector2 direction = transform.position - player.transform.position;
         MovePosition(-direction);
-     
     }
 
+    public void PerformAttack()
+    {
 
+        Collider2D[] rc;
+
+        rc = Physics2D.OverlapCircleAll(transform.position, attackDistance, playerMask);
+
+        foreach (Collider2D hit in rc)
+        {
+            if (hit != null)
+            {
+                if (hit.gameObject.CompareTag("Player"))
+                {
+                    hit.gameObject.GetComponent<Stalker>().Die();
+                    break;
+                }
+            }
+        }
+        anim.SetBool("IsAtacking", false);
+    }
 
 }
