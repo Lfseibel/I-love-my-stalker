@@ -1,0 +1,113 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18362.175; Version 1903; 64bit' Language: 'pt' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/ILMS/ILMS
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+55552
+Successfully changed project path to: C:/ILMS/ILMS
+C:/ILMS/ILMS
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/ILMS/ILMS/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001393 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.08 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.720 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2415.
+Total: 2.218000 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.056300 ms MarkObjects: 1.856000 ms  DeleteObjects: 0.122500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Dog.prefab
+  artifactKey: Guid(352511726f04f12468f4e47bee2784a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Dog.prefab using Guid(352511726f04f12468f4e47bee2784a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93b3db6968c156c4745ae4a8d1d58ab') in 0.090207 seconds
+  Import took 0.094839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.497230 seconds.
+  path: Assets/Prefabs/Stalker.prefab
+  artifactKey: Guid(6bf132d58dfed9d4d9dc860ea9284bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stalker.prefab using Guid(6bf132d58dfed9d4d9dc860ea9284bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df14332411af52704e197b60a6392c') in 0.020013 seconds
+  Import took 0.024055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016792 seconds.
+  path: Assets/Prefabs/Stalker.prefab
+  artifactKey: Guid(6bf132d58dfed9d4d9dc860ea9284bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stalker.prefab using Guid(6bf132d58dfed9d4d9dc860ea9284bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df14332411af52704e197b60a6392c') in 0.013079 seconds
+  Import took 0.017426 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000864 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.791 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.0 MB.
+System memory in use after: 93.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2426.
+Total: 2.247400 ms (FindLiveObjects: 0.188800 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.902400 ms  DeleteObjects: 0.093900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
